@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <section class="score-board-container">
+    <div class="score-board">
+      <img src="./images/logo.svg" alt="">
+      <div class="score">
+        <h3>score</h3>
+        <h1 id="score-text">0</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="button first-step">
+    <div class="img-container">
+      <img src="images/bg-triangle.svg" alt="">
+      <button class="paper-btn choice-btn" data-choice="paper"></button>
+      <button class="scissors-btn choice-btn" data-choice="scissors"></button>
+      <button class="rock-btn choice-btn" data-choice="rock"></button>
+    </div>
+  </section>
+
+  <section class="pending-choice second-step">
+    <div class="col-left">
+      <h2>you picked</h2>
+      <button class="btn-lg"></button>
+    </div>
+    <div class="col-right">
+      <h2>the house picked</h2>
+      <div class="hole"></div>
+    </div>
+  </section>
+
+  <section class="completed-choice third-step">
+    <div class="col-left">
+      <h2>you picked</h2>
+      <button class="btn-lg"></button>
+    </div>
+    <div class="col-right">
+      <h2>the house picked</h2>
+      <button class="btn-lg"></button>
+    </div>
+  </section>
+
+  <section class="finished-choice final-step">
+    <div class="col-left">
+      <h2>you picked</h2>
+      <button class="btn-lg"></button>
+    </div>
+    <div class="col-middle">
+      <h1 id="winOrLose">you lose</h1>
+      <button class="play-again">play again</button>
+    </div>
+    <div class="col-right">
+      <h2>the house picked</h2>
+      <button class="btn-lg"></button>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="modal-header">
+      <h1>RULES</h1>
+      <img src="images/icon-close.svg" alt=""  id="rules-close">
+    </div>
+    <div class="modal-body">
+      <img src="images/image-rules.svg" alt="">
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+  <div class="centralize">
+    <button id="rules">
+      rules
+    </button>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
